@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hardik's Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/6c820a33bb.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <!-- <img src="images/logo.png" class="logo" alt="logo"> -->
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#scroll">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fas fa-times" onclick="closemenu()"></i>
+                </ul>
+                <i class="fas fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <h1>Hi, I'm <span>Hardik</span></h1>
+                <p>Aspiring Software Engineer</p>
+            </div>
+        </div>
+    </div>
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/user.png" alt="">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>As a motivated second-year Computer Science and Engineering student at Lovely Professional University in Punjab, I am deeply passionate about technology and software development. With a robust skill set in full-stack web development, Python, C, C++, and data structures and algorithms (DSA), I have cultivated a strong foundation in both front-end and back-end technologies. My academic journey has been complemented by hands-on projects and collaborative team experiences, allowing me to apply theoretical knowledge to real-world challenges. I am actively seeking an internship opportunity where I can further hone my skills, contribute to meaningful projects, and learn from industry professionals. Driven by curiosity and a commitment to continuous learning, I am eager to take on new challenges and make a positive impact in a dynamic work environment.</p>
+
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li>Data Structures and Algorithm</li>
+                            <li>Frontend Developer<br>HTML, CSS, JavaScript, Git, Github, Bootstrap</li>
+                            <li>C, C++, Python</li>
+                        </ul>                  
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li>Web developer intern <br>Gauravgo Games and Technology <span> Jan'24 </span></li>
+                            <li>Team Member at Oasis Student Organisation<br> at Lovely Professional University <span> Sept'23 </span></li>
+                            <li>Team Member at Wipro Student Organisation<br> at Lovely Professional University<span>  Feb'24 </span></li>
+                            
+                        </ul>                  
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li>10th Dav Police Public School <span>9 CGPA</span></li>
+                            <li>10+2 Dav Police Public School <span>7.6 CGPA</span></li>
+                            <li>Jee Mains 2024 Qualified <span>Among Top 10%</span></li>
+                            <li>B-tech Computer Science <br>Lovely Professional Uiversity <span>TGPA 8.5 till 3rd sem</span></li>
+                        </ul>                  
+                    </div>
+                 </div>
+            </div>
+        </div>
+    </div>
+    <!-- Services -->
+    <div class="services">
+        <div id="scroll"></div>
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Frontend Developer</h2>
+                    <p> 
+                        A Frontend Developer is responsible for implementing visual and interactive elements that users engage with through their web browsers. They work closely with designers and backend developers to create responsive, user-friendly interfaces using HTML, CSS, JavaScript, and various frameworks. Their role involves ensuring cross-browser compatibility, optimizing performance, and enhancing user experience.
+                    </p>
+                    <a href="https://www.google.com/search?q=frontend+developer&rlz=1C1CHBF_enIN1065IN1066&oq=frontend+de&gs_lcrp=EgZjaHJvbWUqDwgAEAAYFBiHAhixAxiABDIPCAAQABgUGIcCGLEDGIAEMgYIARBFGDkyDwgCEAAYFBiHAhixAxiABDIHCAMQABiABDIJCAQQABgKGIAEMgcIBRAAGIAEMg0IBhAAGIMBGLEDGIAEMg8IBxAAGAoYgwEYsQMYgAQyBwgIEAAYgAQyCggJEAAYsQMYgASoAgCwAgE&sourceid=chrome&ie=UTF-8">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-spinner"></i>
+                    <h2>Coming Soon</h2>
+                    <p>
+                    </p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-spinner"></i>
+                    <h2>Coming Soon</h2>
+                    <p>
+                    </p>
+                    <a href="#">Learn more</a>
+                </div>
+            </div>
+        </div>
+    </div>
+<!-- portfolio -->
+ <div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">My Work</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="images/people_with_phones_detection.webp" alt="" height="400px">
+                <div class="layer">
+                    <h3>Face Detection using OpenCV-Python</h3>
+                    <p></p>
+                    <a href="https://github.com/hardikkumar4472/Face-Detection-Using-Python-OpenCV/tree/main/Face%20detection%20using%20open%20CV"><i class="fa-solid fa-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/work in progress.jpg" alt="" height="400px">
+                <div class="layer">
+                    <h3>Coming Soon</h3>
+                    <p></p>
+                    <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/work in progress.jpg" alt="" height="400px">
+                <div class="layer">
+                    <h3>Coming Soon</h3>
+                    <p></p>
+                    <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                </div>
+            </div>
+        </div>
+        <a href="https://www.google.com/search?q=work+in+progress&rlz=1C1CHBF_enIN1065IN1066&oq=work+in+&gs_lcrp=EgZjaHJvbWUqDwgBEAAYFBiHAhixAxiABDIGCAAQRRg5Mg8IARAAGBQYhwIYsQMYgAQyCggCEAAYsQMYgAQyCggDEAAYsQMYgAQyCggEEAAYsQMYgAQyBggFEEUYPDIGCAYQRRg9MgYIBxBFGDzSAQgyNjgyajBqOagCALACAQ&sourceid=chrome&ie=UTF-8" class="btn">See More</a>
+    </div>
+ </div>
+ <div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p> <i class="fa-solid fa-share"></i>hardikv715@gmail.com</p>
+                <p><i class="fa-solid fa-phone"></i>9518139899</p>
+                <div class="social-icons">
+                    <a href="https://www.instagram.com/i_m_hrdk_/"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://www.linkedin.com/in/hardik-kumar-63a4b3249/"><i class="fa-brands fa-linkedin"></i></a>
+                </div>
+                <a href="images/my-cv.pdf" download class="btn btn2">Download CV</a>
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="Email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+                <span id="msg"></span>
+            </div>
+        </div>
+    </div>
+ </div>
+
+    <script>
+        var tablinks=document.getElementsByClassName("tab-links");
+        var tabcontents=document.getElementsByClassName("tab-contents");
+        function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link");
+            }
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+    </script>
+    <script>
+        var sidemenu=document.getElementById("sidemenu");
+        function openmenu(){
+            sidemenu.style.right="0";
+        }
+        function closemenu(){
+            sidemenu.style.right="-200px";
+        }
+    </script>
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbx_Sf2PksuKgEj6xoehr1x1f0RITwLruSqKxaR4whUwGoOF7GjMsHiqHHFMVZK9b1RP/exec'
+        const form = document.forms['submit-to-google-sheet']
+        const msg = document.getElementById('msg')
+        form.addEventListener('submit', e => {
+          e.preventDefault()
+          fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response => {
+                msg.innerHTML="Message Sent Successfully"
+                setTimeout(function(){
+                    msg.innerHTML=""
+                },1)
+                form.reset()
+            })
+            .catch(error => console.error('Error!', error.message))
+        })
+      </script>
+</body>
+</html>
